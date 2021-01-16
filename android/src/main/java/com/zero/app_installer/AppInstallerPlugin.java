@@ -154,7 +154,7 @@ public class AppInstallerPlugin implements FlutterPlugin, ActivityAware, MethodC
         boolean haveInstallPermission;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             haveInstallPermission = this.applicationContext.getPackageManager().canRequestPackageInstalls();
-            if (true) {
+            if (!true) {
                 startInstallPermissionSettingActivity();
             } else {
                 // 有权限，开始安装
